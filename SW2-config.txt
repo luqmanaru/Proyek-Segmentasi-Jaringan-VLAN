@@ -1,0 +1,14 @@
+enable
+configure terminal
+hostname SW2
+vlan 10
+name Sales
+exit
+vlan 20
+name IT
+exit
+interface range fa0/1-6
+switchport mode trunk
+exit
+end
+show spanning-tree
